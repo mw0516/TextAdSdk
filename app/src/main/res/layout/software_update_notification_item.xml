@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/notificationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/notificationPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/notificationImage"
+        android:paddingLeft="6dp"
+        android:paddingRight="0dp"
+         />
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/notificationPercent"
+        android:layout_alignTop="@+id/notificationPercent"
+        android:paddingTop="2dp"
+        android:layout_marginRight="6dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/notificationProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/notificationImage"
+        android:layout_alignLeft="@+id/notificationPercent"
+        android:layout_alignRight="@+id/notificationTitle"
+        android:paddingBottom="6dp"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp" />
+
+</RelativeLayout>
