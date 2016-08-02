@@ -15,13 +15,5 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
--keep public class com.coold.BannerLayout {
-   		 public <fields>;
-   		 public <methods>;
-		}
--keep public class com.coold.Ration {
- public <fields>;
-    public <methods>;
-}
--keep public class * extends android.app.Activity
--dontwarn com.coold.mutidownload.**
+
+-keep public class com.coold.** {*;}
